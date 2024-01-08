@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Bat Ball Wicket Game</h1>
+
+    <button
+      class="button"
+      onclick="
+    const userMsg='You have chosen bat';
+    let randomNumber=Math.random()*3;
+    let computerChoice;
+    if(randomNumber>0 && randomNumber<=1)
+    {
+        computerChoice='Bat';
+    } else if(randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice='Ball';
+    }
+    else{
+        computerChoice='Wicket';
+    }
+    let resultmsg;
+    if(computerChoice==='Ball')
+    {
+        resultmsg='User Won';
+    }
+    else if(computerChoice==='Bat')
+    {
+        resultmsg='Its a tie';
+    }
+    else if(computerChoice==='Wicket')
+    {
+        resultmsg='Computer Won';
+    }
+    alert(`You have Chosen Bat. Copmuter Choice is ${computerChoice}and ${resultmsg}`);
+    "
+    >
+      Bat
+    </button>
+    <button class="button"  onclick="
+    randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1)
+    {
+        computerChoice='Bat';
+    } else if(randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice='Ball';
+    }
+    else{
+        computerChoice='Wicket';
+    }
+    if(computerChoice==='Wicket')
+    {
+        resultmsg='User Won';
+    }
+    else if(computerChoice==='Ball')
+    {
+        resultmsg='Its a tie';
+    }
+    else if(computerChoice==='Bat')
+    {
+        resultmsg='Computer Won';
+    }
+    alert(`You have Chosen Ball. Computer choice is ${computerChoice} and ${resultmsg}`);
+    ">Ball</button>
+    <button class="button" onclick="
+    randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1)
+    {
+        computerChoice='Bat';
+    } else if(randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice='Ball';
+    }
+    else{
+        computerChoice='Wicket';
+    }
+    if(computerChoice==='Ball')
+    {
+        resultmsg='User Won';
+    }
+    else if(computerChoice==='Wicket')
+    {
+        resultmsg='Its a tie';
+    }
+    else if(computerChoice==='Bat')
+    {
+        resultmsg='Computer Won';
+    }
+    alert(`You have Chosen Wicket. Computer choice is ${computerChoice} and ${resultmsg}`);
+    " >Wicket</button>
+  </body>
+</html>
